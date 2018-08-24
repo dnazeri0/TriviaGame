@@ -1,0 +1,19 @@
+html * {
+    font-family: Scout !important;
+}
+
+body {
+    background:  url("../images/siegebg.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#questionBackground {
+    background: #24272C;
+    color: lightgrey;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: 'Scout'; /*custom font from .ttf file*/
+    src: url('../Scout-Black.otf'); 
+}
