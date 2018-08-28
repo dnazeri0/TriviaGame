@@ -7,19 +7,11 @@ body {
     background-size: cover;
 }
 
-h3 {
-    z-index: -1;
-}
-
-div {
-    z-index: 1;
-}
-
-/* #questionBackground {
+#questionBackground {
     background: #24272C;
     color: lightgrey;
     font-size: 25px;
-} */
+}
 
 @font-face {
     font-family: 'Scout'; /*custom font from .ttf file*/

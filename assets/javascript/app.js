@@ -1,15 +1,15 @@
 // question bank to hold every possible question and their respective answers
 var questionBank = [
-    new question("Jaeger is most known for getting his ____ removed.",["acog scope", "appendix", "M4 carbine smg", "flashbangs"],0),
-    new question("What map was removed from competitive but brought back in Operation Grim Sky?",["Yacht", "Favela", "Chalet"],1),
-    new question("Which operator has a gadget that can heal other players with a stim pistol?",[ "Rook", "Doc", "Alibi", "IQ"],1),
-    new question("____ is regarded as 'Lord _____.'",["Blitz", "Tachanka", "Mira", "Castle"],1),
-    new question("Which operation did Jackal and Mira get introduced?",["Operation Black Ice", "Operation Para Bellum","Operation Chimera","Operation Velvet Shell" ],3),
-    new question("The operator that uses a hammer to knock down reinforced surfaces is _____.",["Ash", "Sledge", "Smoke","Blackbeard"],1),
-    new question("If a player does not choose an operator in time, they will play as _____.",["Recruit", "Capitao", "Frost","Lesion"],0),
-    new question("_____ is a defending operator.",["Kapkan", "Dokkaebi", "Hibana", "Glaz"],0),
-    new question("All of these are attacking operators EXCEPT _____.",["Buck", "Thatcher", "Ash", "Pulse"],3),
-    new question("This operator has a modified drone that shoots a taser.",["Clash", "Twitch", "Blitz", "Bandit"],1),
+    new question("Grand Central Terminal, Park Avenue, New York is the world's",["largest railway station", "highest railway station", "longest railway station", "None of the above"],0),
+    new question("Entomology is the science that studies",["Behavior of human beings", "Insects", "The origin and history of technical and scientific terms"],1),
+    new question("Eritrea, which became the 182nd member of the UN in 1993, is in the continent of",[ "Asia", "Africa", "Europe", "Australia"],1),
+    new question(" Garampani sanctuary is located at ",["Junagarh, Gujarat", "Diphu, Assam", "Kohima, Nagaland", "Gangtok, Sikkim"],1),
+    new question("For which of the following disciplines is Nobel Prize awarded?",["Physics and Chemistry", "Physiology or Medicine","Literature, Peace and Economics","All of the above" ],3),
+    new question("Hitler party which came into power in 1933 is known as",["Labor Party", "Nazi Party", "Ku-Klux-Klan","Democratic Party"],1),
+    new question("The headquarter of International Atomic Energy Agency (IAEA) are situated at ",["Vienna", "Rome", "Geneva","Paris"],0),
+    new question("Where is the permanent secretariat of the SAARC?",["Kathmandu", "New Delhi", "Islamabad", "Colombo"],0),
+    new question("The Olympic Flame symbolises ",["unity among various nations of the world", "speed, perfection and strength", "sports as a means for securing harmony among nations", "continuity between the ancient and modern games"],3),
+    new question("The number of already named bones in the human skeleton is",["200", "206", "212", "218"],1),
 ];
 
 // stores the scores 
@@ -32,7 +32,6 @@ function setupQuestion() {
         formHtml += '<div><input type="radio" name="option" value="' + i + '" class="options"><label for="option' + i + '">' + options[i] + '</label></div><br>';
     }
     $('#form').html(formHtml);
-    $('#question').append($('#form'));
     $(".options:eq(0)").prop('checked', true);
     $('.nextButton').html( $('#form').append('<a href="#" id="next" class="button">Next</a>'));
 }
